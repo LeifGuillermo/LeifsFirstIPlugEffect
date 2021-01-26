@@ -13,10 +13,11 @@ LeifsFirstIPlugEffect::LeifsFirstIPlugEffect(const InstanceInfo& info)
   };
   
   mLayoutFunc = [&](IGraphics* pGraphics) {
-    pGraphics->AttachCornerResizer(EUIResizerMode::Scale, false);
-    pGraphics->AttachPanelBackground(COLOR_GRAY);
-    pGraphics->LoadFont("Roboto-Regular", ROBOTO_FN);
     const IRECT b = pGraphics->GetBounds();
+
+    pGraphics->AttachCornerResizer(EUIResizerMode::Scale, false);
+    pGraphics->AttachSVGBackground(REPEATING_CHEVRONS_BACKGROUND);
+    pGraphics->LoadFont("Roboto-Regular", ROBOTO_FN);
     pGraphics->AttachControl(new ITextControl(b.GetMidVPadded(50), "Hello iPlug 2!", IText(50)));
     pGraphics->AttachControl(new IVKnobControl(b.GetCentredInside(100).GetVShifted(-100), kGain));
   };

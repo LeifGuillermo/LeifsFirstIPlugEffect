@@ -6,7 +6,7 @@
 #define PLUG_MFR_ID 'Acme'
 #define PLUG_URL_STR "https://iplug2.github.io"
 #define PLUG_EMAIL_STR "spam@me.com"
-#define PLUG_COPYRIGHT_STR "Copyright 2020 Acme Inc"
+#define PLUG_COPYRIGHT_STR ""
 #define PLUG_CLASS_NAME LeifsFirstIPlugEffect
 
 #define BUNDLE_NAME "LeifsFirstIPlugEffect"
@@ -52,3 +52,9 @@
 #define APP_SIGNAL_VECTOR_SIZE 64
 
 #define ROBOTO_FN "Roboto-Regular.ttf"
+
+//I customized the wicked cool backgrounds in this plugin at SVGBackgrounds.com.
+#define REPEATING_CHEVRONS_BACKGROUND "Repeating-Chevrons.svg"
+#define CONFETTI_DOODLES_BACKGROUND "Confetti-Doodles.svg"
+#define WAVEY_FINGERPRINT_BACKGROUND "Wavey-Fingerprint.svg"
+
